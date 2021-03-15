@@ -11,14 +11,22 @@ const LoginBack = memo(() => {
         <Back>
             {displayBack && !user &&
                 <>
-                    <WelcomeCircle upperText='Register' middleText='with' lowerText='MUSIC RADAR' />
+                    <WelcomeCircle
+                        upperText='Register'
+                        middleText='with'
+                        lowerText='MUSIC RADAR'
+                    />
                     <RegisterForm />
                     <PasswordRow text='Login' />
                 </>}
 
             {displayBack && user &&
                 <>
-                    <WelcomeCircle upperText='Welcome' middleText='back to' lowerText='MUSIC RADAR' />
+                    <WelcomeCircle
+                        upperText='Welcome'
+                        middleText='back to'
+                        lowerText='MUSIC RADAR'
+                    />
                     <YourFavoritesForm />
                     <PasswordRow text='Logout' />
                 </>}

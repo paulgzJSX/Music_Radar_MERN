@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 export const GridPage= styled.div`
     display: grid;
@@ -13,4 +13,23 @@ export const GridPage= styled.div`
     @media (max-width: 620px) {
         grid-template-columns: 1fr;    
     }
+`
+
+export const flexCenterBetween = css`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+`
+
+export const flexCenterCenter = css`
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+`
+
+export const iconShared = css`
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    opacity: .7;
 `

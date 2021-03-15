@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
+import { flexCenterBetween, flexCenterCenter } from './GlobalStyles'
 import { GoSearch } from 'react-icons/go'
 import { ImCross } from 'react-icons/im'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -50,13 +51,11 @@ export const Mobile = styled.div`
 `
 
 export const LogoContainer = styled(motion.div)`
+    ${flexCenterCenter};
     background-color: #fff;
     height: 90px;
     width: 90px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;  
 
     @media (max-width: 1030px) {
@@ -70,9 +69,7 @@ export const LogoNavLink = styled(NavLink)`
 `
 
 export const NavLinks = styled.ul`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    ${flexCenterBetween};
     min-width: 600px;
 
     @media (max-width: 1030px) {

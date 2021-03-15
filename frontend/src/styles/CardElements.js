@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { flexCenterBetween } from './GlobalStyles'
 
 export const slideIn = keyframes`
     from { 
@@ -42,9 +43,7 @@ export const CoverSection = styled.div`
 `
 
 export const Header = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    ${flexCenterBetween};
 `
 
 export const CurrentTrack = styled.p`
@@ -87,10 +86,8 @@ export const Description = styled.p`
 `
 
 export const RelatedArtists = styled.ul`
+    ${flexCenterBetween};
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
 `
 

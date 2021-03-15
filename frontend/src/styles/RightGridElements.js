@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { flexCenterBetween, flexCenterCenter } from './GlobalStyles'
 
 export const fadeIn = keyframes`
     from { 
@@ -37,11 +38,9 @@ export const TracksContainer = styled.div`
 `
 
 export const Track = styled.div`
+    ${flexCenterBetween};
     padding: .5rem 1.2rem;
     background-color: #513252;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: .2rem;
     transition: all .2s ease;
 
@@ -55,18 +54,14 @@ export const Track = styled.div`
 `
 
 export const TrackPosition = styled.div`
+    ${flexCenterCenter};
     min-width: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: ${props => props.playing ? '#fff' : '#402841'};
 `
 
 export const TrackData = styled.div`
+    ${flexCenterBetween};
     min-width: 16rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 
     @media (max-width: 1260px) {
         width: 14rem;

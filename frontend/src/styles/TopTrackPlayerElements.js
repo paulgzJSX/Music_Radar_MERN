@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { flexCenterCenter } from './GlobalStyles'
 import image from '../images/street-light.jpg'
 import { FaPlay, FaPause } from 'react-icons/fa'
 
@@ -15,9 +16,7 @@ export const PlayerContainer = styled.div`
 `
 
 export const PlayerButton = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    ${flexCenterCenter};
     height: 65px;
     width: 65px;
     background-color: transparent;

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { flexCenterBetween } from './GlobalStyles'
 import { BsStarFill } from 'react-icons/bs'
 
 export const StarContainer = styled.div`
@@ -22,9 +23,7 @@ export const FavoritesTracksContainer = styled.div`
 `
 
 export const FavoriteTrack = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    ${flexCenterBetween};
     background-color: #513252;
     padding: .5rem 1.2rem;
     margin-bottom: .2rem;

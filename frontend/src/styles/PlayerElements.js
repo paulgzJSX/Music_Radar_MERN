@@ -1,11 +1,10 @@
 import styled from 'styled-components'
+import { flexCenterCenter, iconShared } from './GlobalStyles'
 import { FaPlay, FaPause, FaForward, FaBackward, FaStepBackward, FaStepForward } from 'react-icons/fa'
 
 
 export const Player = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    ${flexCenterCenter};
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -26,37 +25,23 @@ export const Pause = styled(FaPause)`
 `
 
 export const CenterPlayer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;  
+    ${flexCenterCenter};
 `
 
 export const FirstTrackIcon = styled(FaStepBackward)`
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-    opacity: .7;
+    ${iconShared};
 `
 
 export const BackIcon = styled(FaBackward)`
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-    opacity: .7;
+    ${iconShared};
 `
 
 export const ForwardIcon = styled(FaForward)`
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-    opacity: .7;
+    ${iconShared};
 `
 
 export const LastTrackIcon = styled(FaStepForward)`
-    font-size: 1rem;
-    color: #fff;
-    cursor: pointer;
-    opacity: .7;
+    ${iconShared};
 `
 
 export const TimerContainer = styled.div`

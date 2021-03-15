@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { flexCenterBetween } from './GlobalStyles'
 import { BsPlus } from 'react-icons/bs'
 
 export const TopTrackCardContainer = styled.div`
@@ -26,9 +27,7 @@ export const ArtistCard = styled.div`
 `
 
 export const Header = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    ${flexCenterBetween};
     margin-bottom: 1rem;
 `
 
@@ -59,11 +58,9 @@ export const TrackTitle = styled.span`
 `
 
 export const Briefs = styled.div`
+    ${flexCenterBetween};
     padding: .8rem 1.5rem;
     height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background: linear-gradient(0deg, rgba(81, 50, 82, 0.7), rgba(81, 50, 82, 0.7));
 
     p {
@@ -74,5 +71,4 @@ export const Briefs = styled.div`
 `
 
 export const Stat= styled.div`
-    /* width: 80px; */
 `

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { flexCenterBetween, flexCenterCenter } from './GlobalStyles'
 import { BsStarFill } from 'react-icons/bs'
 
 export const fadeIn = keyframes`
@@ -34,11 +35,9 @@ export const GridContainer = styled.div`
 `
 
 export const GridItem = styled.div`
+    ${flexCenterBetween};
     padding: .5rem 1.4rem;
     background-color: #513252;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     margin-bottom: .2rem;
     transition: all .3s ease;
 
@@ -52,10 +51,8 @@ export const GridItem = styled.div`
 `
 
 export const Position = styled.div`
+    ${flexCenterCenter};
     width: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
     h1 {
         font-size: 2.1rem;

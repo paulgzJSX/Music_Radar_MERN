@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import { flexCenterCenter } from './GlobalStyles'
 
 export const fadeIn = keyframes`
     from { 
@@ -45,13 +46,11 @@ export const Back = styled.div`
 `
 
 export const Welcome = styled.div`
+    ${flexCenterCenter};
     background-color: #fff;
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     color: #513252;
     line-height: 1.3;
@@ -156,9 +155,5 @@ export const Notification = styled.a`
     transition: all .2s ease-in-out;
     cursor: pointer;
     animation: ${fadeIn} .8s;
-/* 
-    &:hover {
-        color: #c37cc7;
-    } */
 `
 

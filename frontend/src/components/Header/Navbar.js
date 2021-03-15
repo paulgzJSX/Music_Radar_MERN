@@ -14,7 +14,6 @@ const Navbar = () => {
                 <li><NavLink to='/albums'>TOP 10 ALBUMS</NavLink></li>
                 <li><NavLink to='/artists'>TOP ARTISTS</NavLink></li>
             </NavLinks>
-
         </nav>
     )
 }

@@ -5,7 +5,11 @@ const FavoriteTracks = ({ favoriteTracks }) => {
     return (
         <FavoritesTracksContainer>
             {favoriteTracks?.map((track, idx) =>
-                    <FavoriteTrackRow key={track.id} track={track} position={idx + 1} />)}
+                <FavoriteTrackRow
+                    key={track.id}
+                    track={track}
+                    position={idx + 1}
+                />)}
         </FavoritesTracksContainer>
     )
 }

@@ -10,7 +10,6 @@ const TopTrackPlayer = () => {
     const { selectedTrack } = useContext(TracksContext)
     const { 
         initiateAudio, 
-        playAudio,
         pauseAudio, 
         isPlaying, 
         audio,

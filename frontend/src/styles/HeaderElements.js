@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import styled from 'styled-components'
-import { flexCenterBetween, flexCenterCenter } from './GlobalStyles'
+import { flexCenterBetween, flexCenterCenter, flexCenterAround } from './GlobalStyles'
 import { GoSearch } from 'react-icons/go'
 import { ImCross } from 'react-icons/im'
 import { GiHamburgerMenu } from 'react-icons/gi'
@@ -12,9 +12,7 @@ export const HeaderContainer = styled.header`
     height: 105px;
     width: 83vw;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;   
+    ${flexCenterAround};
     
     @media (max-width: 1300px) {
         width: 100%;

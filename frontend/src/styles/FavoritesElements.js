@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { flexCenterBetween } from './GlobalStyles'
+import { flexCenterBetween, flexCenterEnd } from './GlobalStyles'
 import { BsStarFill } from 'react-icons/bs'
 
 export const StarContainer = styled.div`
@@ -59,10 +59,8 @@ export const TrackDuration = styled.p`
 `
 
 export const GainContainer = styled.div`
+    ${flexCenterEnd};
     width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
 `
 
 export const Gain = styled.p`

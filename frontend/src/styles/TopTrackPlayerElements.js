@@ -1,12 +1,10 @@
 import styled from 'styled-components'
-import { flexCenterCenter } from './GlobalStyles'
+import { flexCenterCenter, flexCenterAround } from './GlobalStyles'
 import image from '../images/street-light.jpg'
 import { FaPlay, FaPause } from 'react-icons/fa'
 
 export const PlayerContainer = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    ${flexCenterAround};
     height: 110px;
     background: 
         linear-gradient(0deg, rgba(81, 50, 82, 0.5), rgba(81, 50, 82, 0.5)), 

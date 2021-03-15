@@ -27,6 +27,18 @@ export const flexCenterCenter = css`
     justify-content: center;    
 `
 
+export const flexCenterAround = css`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;    
+`
+
+export const flexCenterEnd = css`
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+`
+
 export const iconShared = css`
     font-size: 1rem;
     color: #fff;

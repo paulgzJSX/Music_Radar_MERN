@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import { flexCenterCenter } from './GlobalStyles'
+import { flexCenterCenter, flexCenterEnd } from './GlobalStyles'
 
 export const fadeIn = keyframes`
     from { 
@@ -47,11 +47,11 @@ export const Back = styled.div`
 
 export const Welcome = styled.div`
     ${flexCenterCenter};
+    flex-direction: column;
     background-color: #fff;
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    flex-direction: column;
     color: #513252;
     line-height: 1.3;
     margin: 0 auto;
@@ -122,10 +122,8 @@ export const FormContainer = styled.form`
 `
 
 export const PasswordControls = styled.div`
+    ${flexCenterEnd};
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
     font-family: 'Open Sans', sans-serif;
     font-size: .8rem;    
 `

@@ -11,7 +11,7 @@ const Cover = memo(({ context }) => {
 
     const image = context === FavoriteTracksContext 
         ? selectedTrack.albumCover 
-        : selectedAlbum && selectedAlbum.cover
+        : selectedAlbum?.cover
 
     return (
         <>

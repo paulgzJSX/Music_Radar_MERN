@@ -8,7 +8,7 @@ const TopTracksList = () => {
 
     return (
         <GridContainer>
-            {topTracks && topTracks.map(track => 
+            {topTracks?.map(track => 
                 <TopTrack key={track.id} track={track} />)}
         </GridContainer>
     )

@@ -10,7 +10,7 @@ const Profile = memo(({ context, artistId }) => {
 
     const albumName = context !== TopArtistsContext
         ? selectedAlbum && selectedAlbum.artistName + ' - ' + selectedAlbum.title
-        : selectedAlbum && selectedAlbum.artistName
+        : selectedAlbum?.artistName
 
     return (
         <>

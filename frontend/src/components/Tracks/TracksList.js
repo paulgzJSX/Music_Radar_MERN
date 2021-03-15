@@ -6,11 +6,11 @@ import { TracksContainer } from '../../styles/RightGridElements'
 const TracksList = memo(({ albumTracks }) => {
     return (
         <TracksContainer>
-            {albumTracks && albumTracks.map((track, idx) =>
+            {albumTracks?.map((track, idx) =>
                 <TrackRow
                     key={track.id}
                     track={track}
-                    position={track.position ? track.position : idx + 1}
+                    position={track.position || idx + 1}
                 />)}
         </TracksContainer>
     )

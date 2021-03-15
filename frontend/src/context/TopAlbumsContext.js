@@ -7,7 +7,6 @@ const TopAlbumsContextProvider = (props) => {
     const [selectedAlbum, setSelectedAlbum] = useState()
     const [albumTracks, setAlbumTracks] = useState()
 
-
     return (
         <TopAlbumsContext.Provider value={{
             selectedArtistId, setSelectedArtistId,

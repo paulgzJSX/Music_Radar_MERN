@@ -21,15 +21,14 @@ const RelatedArtistsList = memo(({ artistId }) => {
 
     return (
         <RelatedArtists>
-            {relatedArtists
-                && relatedArtists.map(artist => (
-                    <RelatedArtist
-                        key={artist.id}
-                        onClick={handleClick}
-                    >
-                        {artist.name}
-                    </RelatedArtist>
-                ))}
+            {relatedArtists?.map(artist => (
+                <RelatedArtist
+                    key={artist.id}
+                    onClick={handleClick}
+                >
+                    {artist.name}
+                </RelatedArtist>
+            ))}
         </RelatedArtists>
     )
 })

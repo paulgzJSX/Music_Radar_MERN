@@ -15,8 +15,8 @@ const NotificationMessage = memo(() => {
     }, [message])
 
     return (
-        <>{displayNotification && <Notification>{message}</Notification>}
-        
+        <>
+            {displayNotification && <Notification>{message}</Notification>}
         </>
     )
 })

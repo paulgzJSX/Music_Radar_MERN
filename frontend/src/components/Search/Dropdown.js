@@ -14,7 +14,7 @@ const Dropdown = React.forwardRef(({ actions, results, setTerm }, ref) => {
     return (
         <DropdownContainer>
             <DropdownList ref={ref}>
-                {results && results.map(artist =>
+                {results?.map(artist =>
                     <li
                         key={artist.id}
                         onClick={handleClick}

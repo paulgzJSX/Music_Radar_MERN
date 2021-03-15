@@ -14,7 +14,7 @@ const SearchResultsPage = () => {
             albumsHook={useSearchAlbums}
             albumsParam={selectedArtistId}
             tracksHook={useSearchAlbumTracks}
-            tracksParam={selectedAlbum && selectedAlbum.tracklist}
+            tracksParam={selectedAlbum?.tracklist}
             artistId={selectedArtistId}
         />
     )

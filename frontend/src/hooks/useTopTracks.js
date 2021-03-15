@@ -3,8 +3,8 @@ import Axios from 'axios'
 
 export const useTopTracks = () => {
     return useQuery('top-tracks', async () => {
-        const { data } = await Axios.get(process.env.REACT_APP_CHART_URL)
-        return data.tracks.data.sort((a, b) => a.position - b.position)
+        const { data: { tracks: { data: topTracks } } } = await Axios.get(process.env.REACT_APP_CHART_URL)
+        return topTracks.sort((a, b) => a.position - b.position)
     }, {
         staleTime: Infinity
     })

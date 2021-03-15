@@ -28,8 +28,8 @@ export const useTopAlbums = () => {
 export const useTopAlbumTracks = (albumId) => {
     return useQuery(['top-album-tracks', albumId], async () => {
         if (albumId) {
-            const { data } = await Axios.get(`${process.env.REACT_APP_ALBUM_URL}${albumId}/tracks`)
-            return data.data.map(track => {
+            const { data: { data: topAlbumTracks } } = await Axios.get(`${process.env.REACT_APP_ALBUM_URL}${albumId}/tracks`)
+            return topAlbumTracks.map(track => {
                 return {
                     id: track.id,
                     title: track.title,

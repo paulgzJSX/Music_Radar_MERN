@@ -10,7 +10,7 @@ const AudioContextProvider = (props) => {
     const [isTrackOfDayPlaying, setIsTrackOfDayPlaying] = useState(false)
 
     const clearAudioOnMount = () => {
-        audio && audio.pause()
+        audio?.pause()
         setAudio(undefined)
         setIsPlaying(false)
         stopTrackOfDayAudio()
@@ -18,7 +18,7 @@ const AudioContextProvider = (props) => {
     }
 
     const initiateAudio = (track) => {
-        audio && audio.pause()
+        audio?.pause()
         audio && selectedTrack === track ? audio.play() : setAudio(new Audio(track.preview))
         setIsPlaying(true)
         setSelectedTrack(track)

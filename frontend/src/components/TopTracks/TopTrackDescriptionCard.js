@@ -9,7 +9,7 @@ const TopTrackDescriptionCard = () => {
 
     return (
         <TopTrackCardContainer>
-            <CoverSection backgroundImage={selectedTrack && selectedTrack.album.cover_big}>
+            <CoverSection backgroundImage={selectedTrack?.album.cover_big}>
                 <ArtistCard>
                     <Header>
                         <Star id={selectedTrack.id} type={'tracks'} />

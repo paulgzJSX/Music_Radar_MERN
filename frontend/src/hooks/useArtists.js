@@ -25,8 +25,8 @@ export const useTopArtists = () => {
 export const useTopArtistTracks = (artistId) => {
     return useQuery(['top-artist-tracks', artistId], async () => {
         if (artistId) {
-            const { data } = await Axios.get(`${process.env.REACT_APP_ARTIST_URL}${artistId}/top?limit=25`)
-            return data.data.map(track => {
+            const { data: { data: topArtistTracks } } = await Axios.get(`${process.env.REACT_APP_ARTIST_URL}${artistId}/top?limit=25`)
+            return topArtistTracks.map(track => {
                 return {
                     id: track.id,
                     title: track.title,

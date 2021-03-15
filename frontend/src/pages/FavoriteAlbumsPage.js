@@ -16,8 +16,8 @@ const FavoriteAlbums = () => {
             albumsHook={useFavoriteAlbums}
             albumsParam={[...favorites.albums]}
             tracksHook={useSearchAlbumTracks}
-            tracksParam={selectedAlbum && selectedAlbum.tracklist}
-            artistId={selectedAlbum && selectedAlbum.artistId}
+            tracksParam={selectedAlbum?.tracklist}
+            artistId={selectedAlbum?.artistId}
         />
     )
 }

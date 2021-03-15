@@ -18,7 +18,7 @@ export const fetchUser = async () => {
 }
 
 export const loginUser = async (email, password) => {
-    const res = Axios.post(`${baseUrl}/login`, { email, password }, { withCredentials: true })
+    const res = await Axios.post(`${baseUrl}/login`, { email, password }, { withCredentials: true })
     return res
 }
 

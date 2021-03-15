@@ -3,7 +3,6 @@ import { getTime } from '../../helpers/helpers'
 import { CurrentTime, PlayerLine, TimerContainer } from '../../styles/PlayerElements'
 
 const Timer = memo(({ currentTime }) => {
-
     return (
         <TimerContainer>
             <CurrentTime>{getTime(currentTime)}</CurrentTime>

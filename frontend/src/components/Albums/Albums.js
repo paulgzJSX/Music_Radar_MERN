@@ -6,7 +6,7 @@ const Albums = memo(({ albums, context }) => {
 
     return (
         <GridContainer>
-            {albums && albums.map((album, idx) =>
+            {albums?.map((album, idx) =>
                 <Album
                     key={album.id}
                     album={album}

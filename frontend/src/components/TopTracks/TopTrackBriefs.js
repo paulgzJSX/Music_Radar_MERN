@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { trimDate, trimNumber } from '../../helpers/helpers'
 import { TracksContext } from '../../context/TracksContext'
-import { Briefs, Fans, ReleaseDate, Stat } from '../../styles/TopTrackCardElements'
+import { Briefs, Stat } from '../../styles/TopTrackCardElements'
 
 
 const TopTrackBriefs = () => {

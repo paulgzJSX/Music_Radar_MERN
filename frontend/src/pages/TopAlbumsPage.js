@@ -14,8 +14,8 @@ const TopAlbumsPage = () => {
             albumsHook={useTopAlbums}
             albumsParam={null}
             tracksHook={useTopAlbumTracks}
-            tracksParam={selectedAlbum && selectedAlbum.id}
-            artistId={selectedAlbum && selectedAlbum.artistId}
+            tracksParam={selectedAlbum?.id}
+            artistId={selectedAlbum?.artistId}
         />
     )
 }
